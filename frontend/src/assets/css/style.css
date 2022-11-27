@@ -1,0 +1,157 @@
+body{
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+
+.rootList .sub-folder:hover{
+    background: white;
+    transition: 0.3s;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    width: 1200px;
+    margin-right: auto ;
+    margin-left: auto ;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.listWrap{
+    background: #f2f3f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.rootList{
+    list-style: none;
+    width: 50%;
+}
+.rootList + li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.rootList .sub-folder{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    transition: 0.3s;
+}
+.rootList .delete-btn {
+    margin-left: 10px;
+    background: orangered;
+    color: white;
+}
+
+.rootList .add-btn {
+    margin-left: 10px;
+    background: green;
+    color: white;
+}
+
+/*Create Component Style*/
+
+.form-wrap .form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+.form-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrap .form-box form input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #e6d7d7;
+    border-radius: 3px;
+}
+
+.form-wrap .form-box {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    z-index: 100;
+    position: absolute;
+    top: 100px;
+}
+.form-wrap {
+    display: flex;
+    justify-content: center;
+}
+.form-wrap .form-box form input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #e6d7d7;
+    border-radius: 3px;
+}
+.form-wrap .form-box .action-btn {
+    margin-top: 16px;
+}
+.form-wrap .form-box .action-btn button {
+    padding: 8px 18px;
+    margin-right: 8px;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+}
+.form-wrap .form-box .action-btn button:first-child {
+    background: orangered;
+}
+.form-wrap .form-box .action-btn button:last-child {
+    background: green;
+}
+.form-wrap .form-box h2 span {
+    color: green;
+}
+
+
+.wrap-bg {
+    background: rgba(0, 0, 0, 0.26);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+
+
+.action-btn {
+    display: flex;
+}
+
+.sub-folder div {
+    display: flex;
+}
+.sub-folder div .delete-btn {
+}
+.sub-folder div .delete-btn .action-btn button {
+    background: orangered !important;
+    color: white;
+}
+
+.icon{
+    width: 20px;
+    margin-right: 5px;
+}
